@@ -1,0 +1,1169 @@
+:root {
+	--mainBlue: #38B6FF;
+	--mainPink: #FF5757;
+	--mainLightGrey: #E4E4E4;    
+	--mainDarkGrey: #999999;    
+	--mainBlack: #111;   
+    --mainWhite: #FFF ;
+}
+
+body{
+    font-family: "Montserrat";
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+/* Header */
+
+.HeaderBackground{
+    background: linear-gradient(90deg, rgba(153,153,153,1) 0%, rgba(228,228,228,1) 100%);
+    height: 80px;
+    box-shadow: 0px 15px 10px -18px var(--mainBlack);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.afterHeader{
+    margin-top: 90px;
+}
+
+.headerOpacity{
+	opacity: .8;
+}
+
+.logoimg{
+    height: 80px;
+}
+
+.HeaderNavbar{
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.HeaderNavbar .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    transition: 0.4s!important;
+}
+.HeaderNavbar .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover:hover{
+    color: var(--mainBlue);
+    transition: 0.4s!important;
+}
+.modalMenu{
+    position: absolute;
+    top: 25%;
+    width: 300px;
+    margin-left: 620px;
+    height: 500px;
+    display: flex;
+}
+
+.CloseModal{
+    background-color: transparent;
+    color: var(--mainBlue);
+    border: 0;
+    transition: .3s;
+}
+.CloseModal:hover{
+    color: var(--mainDarkGrey);
+    transition: .3s;
+}
+.MenuItems{
+    font-size: 15px;
+    color: var(--mainBlue);
+    transition: .3s;
+    text-align: center;
+}
+.MenuItems:hover{
+    color: var(--mainDarkGrey);
+    transition: .3s;
+}
+
+@media (max-width: 991.98px) {
+    .HeaderNavbar .navbar-toggler{
+        position: absolute!important;
+        right: 0!important;
+        top: 20px!important;
+    }
+
+    .HeaderNavbar .navbar-collapse{
+        border-radius: 7px!important;
+        position: absolute!important;
+        right: -40px!important;
+        top: 80px!important;
+        padding: 10px!important;
+        background-color: #e4e4e4!important;
+        z-index: 999!important;
+    }
+ }
+
+.RightNav{
+    line-height: 80px;
+}
+
+.RightNav li{
+    display: inline;
+    margin: 0 10px;
+    font-size: 23px;
+}
+
+.RightNav a{
+    text-decoration: none;
+    color: var(--mainBlack);
+    transition: 0.4s!important;
+}
+.RightNav a:hover{
+    color: var(--mainBlue);
+    transition: 0.4s!important;
+}
+
+.HeaderBackground .navbar-nav{
+    margin: auto!important;
+}
+
+.FooterBackground{
+    padding: 20px;
+    background-color: var(--mainLightGrey);
+    box-shadow: 0px -15px 10px -18px var(--mainBlack);
+}
+
+.FooterLogo{
+    width: 250px;
+    height: 250px;
+}
+
+.LogoBorder{
+    border-right: 1px solid var(--mainPink);
+}
+
+.FooterIcons{
+    color: var(--mainPink);
+    font-size: 20px;
+}
+
+/* Footer */
+
+.FooterBackground a{
+    text-decoration: none;
+    color: var(--mainBlack);
+    transition: 0.4s!important;
+}
+
+.FooterBackground a:hover{
+    color: var(--mainBlue);
+    transition: 0.4s!important;   
+}
+
+/* Home */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.HomeAuthor{
+    font-size: 15px;
+    color: var(--mainPink);
+    text-transform: uppercase;
+}
+
+.HomeBook{
+    font-size: 30px;
+    color: var(--mainPink);
+    text-transform: uppercase;
+}
+
+.HomeSliderBtn{
+    border: 0;
+    background-color: var(--mainBlue);
+    color: var(--mainLightGrey);
+    border-radius: 28px;
+    padding: 10px 20px;
+    transition: .4s;
+}
+
+.HomeSliderBtn:hover{
+    opacity: .6;
+    transition: .4s; 
+    animation: shake 0.5s;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+@media (min-width: 768px) { 
+    #HomeCarousel .carousel-caption{
+        top: 25%!important;
+        right: -30%!important;
+    }
+ }
+
+.TopLabel{
+    font-size: 25px;
+    color: var(--mainPink);
+    font-weight: 600;
+}
+
+.ViewAllBtn{
+    text-decoration: none;
+    color: var(--mainLightGrey);
+    background-color: var(--mainBlue);
+    border-radius: 28px;
+    padding: 7px 12px;
+    transition: .4s;
+}
+
+.ViewAllBtn:hover{
+    color: var(--mainLightGrey);
+    opacity: .6;
+    transition: .4s; 
+}
+
+@media (max-width: 991.98px) { 
+  .ViewAllBtn{
+      float: right;
+  }  
+}
+
+#HomeOwl img, .HomeOwlStyle img{
+    width: 210px;
+    height: 310px;
+    cursor: pointer;
+    transition: .3s;
+}
+#HomeOwl img:hover, .HomeOwlStyle img:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+#HomeOwl .owl-prev{
+	position: absolute;
+    left: -45px;
+    top: 25%!important;
+    font-size: 55px!important;
+    color: var(--mainBlack)!important;
+    background: var(--mainWhite);
+}
+#HomeOwl .owl-prev:hover{
+    font-size: 55px!important;
+    color: var(--mainBlack)!important;
+    background: var(--mainWhite)!important;
+}
+#HomeOwl .owl-next{
+	position: absolute;
+    right: -25px;
+	top: 25%!important;
+    font-size: 55px!important;
+    color: var(--mainBlack)!important;
+    background: var(--mainWhite)!important;
+}
+
+#HomeOwl .owl-theme .owl-dots .owl-dot span{
+	border-radius: 0!important;
+}
+#HomeOwl .owl-theme .owl-prev{
+	font-size: 64px!important;
+	top: 30%!important;
+}
+#HomeOwl .owl-theme .owl-next{
+	font-size: 64px!important;
+	top: 30%!important;
+}
+
+.HomeOwlStyle{
+    position: relative;
+    margin: 0 auto;
+    width: 220px;
+    border: 0!important;
+}
+.HomeOwlStyle .card-body{
+    padding: 0;
+    padding-top: 20px!important;
+}
+
+.HomeOwlStyle .Category{
+    font-size: 15px;
+    color: var(--mainDarkGrey);
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .3s;
+}
+.HomeOwlStyle .Category:hover{
+    color: var(--mainLightGrey);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.HomeOwlStyle .Name{
+    font-size: 13px;
+    color: var(--mainBlack);
+    font-weight: 600;
+    transition: .3s;
+}
+.HomeOwlStyle .Name:hover{
+    color: var(--mainLightGrey);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.Stars li{
+    display: inline;
+    color: #ffb400;
+}
+
+.HomeOwlStyle .Free{
+    font-size: 11px;
+    color: var(--mainPink);
+    font-weight: 600;
+}
+
+.HomeTop10{
+    position: relative;
+}
+
+@media (max-width: 991.98px) { 
+    .HomeTop10Info{
+        left: 35%!important;
+    }
+ }
+
+.HomeTop10Info{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+.ImgTop10{
+    border-radius: 28px;
+}
+
+.DisplayHover{
+    position: absolute;
+	bottom: 150px;
+	right: 20px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    background-color: var(--mainLightGrey);
+    border-radius: 50px;
+}
+
+.ExtraHoverFavorite{
+    bottom: 200px!important;
+}
+
+.HomeOwlStyle:hover .DisplayHover{
+	opacity: .8;
+	transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97)
+}
+
+.eyeBtn{
+    color: var(--mainPink);
+    border: 0;
+    background-color: transparent;
+}
+.eyeBtn:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97)
+}
+
+.eyeBtn svg{
+    height: 25px;
+    width: 25px;
+}
+
+.wishlistBtn{
+    color: var(--mainPink);
+    border: 0;
+    height: 22px;
+    width: 22px;
+    background-color: var(--mainLightGrey);
+    cursor: pointer;
+    margin: auto;
+    margin-top: 10px!important;
+    animation-name: wishlist-ani2;
+    animation-duration: 1000ms;
+    background-color: var(--mainLightGrey);
+    background-image: 
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='%23FF5757' class='bi bi-heart' viewBox='0 0 16 16'>,<path d='m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z'/></svg>");
+     background-repeat:no-repeat;
+}
+.in-wishlist {
+    cursor: pointer;
+    color: var(--mainPink);
+    border: 0;
+    background-color: var(--mainLightGrey);
+    height: 22px;
+    width: 22px;
+    margin: auto;
+    margin-top: 10px!important;
+    animation-name: wishlist-ani;
+    animation-duration: 1000ms;
+    background-color: var(--mainLightGrey);
+    background-image: 
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' fill='%23FF5757' class='bi bi-heart-fill' viewBox='0 0 16 16'>,<path fill-rule='evenodd' d='M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z'/></svg>");
+  }
+.wishlistBtn:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97)
+  }
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+  }
+}
+@keyframes wishlist-ani {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes wishlist-ani2 {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+.CenterTabs{
+    border: 0!important;
+}
+
+#HomeTabs .nav-tabs .nav-link, #HomeTabs .nav-tabs .nav-item.show .nav-link, #HomeTabs .nav-tabs .nav-link:hover, .nav-tabs .nav-link{
+    border: 0!important;
+}
+
+.nav-tabs .nav-link{
+    color: var(--mainBlack)!important;
+    font-size: 17px!important;
+    font-weight: 600!important;
+    border-bottom: 3px solid var(--mainPink)!important;
+    padding-bottom: 5px!important;
+    margin-right: 10px;
+}
+
+.nav-tabs .nav-link:active, .nav-tabs .nav-link:focus{
+    border-bottom: 3px solid var(--mainBlack)!important;
+    font-weight: bold!important;
+    color: var(--mainPink)!important;
+}
+
+.HomeAuthorBox{
+    background-color: var(--mainPink);
+    border-radius: 28px;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.HomeAuthorBox .Title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--mainBlack);
+    text-transform: uppercase;
+}
+
+.HomeAuthorBox .Line{
+    width: 50%;
+    color: var(--mainDarkGrey);
+    height: 2px;
+}
+
+.HomeAuthorBox img{
+    width: 60px;
+    height: 60px;
+    border-radius: 28px;
+}
+
+.HomeAuthorBox .Name{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--mainBlack);
+    line-height: 60px;
+    cursor: pointer;
+    transition: .3s;
+}
+.HomeAuthorBox .Name:hover{
+    color: var(--mainDarkGrey);
+    transition: .3s;
+}
+
+.HomeAuthorBox svg{
+    font-size: 30px;
+    color: var(--mainBlue);
+}
+.HomeAuthorBox svg:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97)
+}
+
+.HomeAuthorBox a{
+    line-height: 60px;
+}
+
+@media (max-width: 991.98px) { 
+    .HomeGenreBox{
+        margin-top: 20px;
+    }
+ }
+
+.HomeGenreBox{
+    background-color: var(--mainLightGrey);
+    border-radius: 28px;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.HomeGenreBox .Title{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--mainBlack);
+    text-transform: uppercase;
+}
+
+.HomeGenreBox .Line{
+    width: 50%;
+    color: var(--mainPink);
+    height: 2px;
+}
+
+.HomeGenreBox .viewAll{
+    line-height: 36px;
+}
+
+.HomeGenreBox img{
+    width: 65%;
+    border-radius: 15px;
+}
+
+.HomeGenreBox .Single{
+    position: relative;
+}
+
+.HomeGenreBox .Name{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Authors Page */
+
+.AuthorsTitle{
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--mainBlack);
+}
+
+.AuthorsNumbers{
+    font-size: 15px;
+    color: var(--mainBlue);
+    border-bottom: 1px solid var(--mainBlue);
+}
+
+.AuthorsAsideBox{
+    background-color: var(--mainLightGrey);
+    border-radius: 28px;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.AuthorsAsideBox .Title{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--mainBlack);
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--mainBlack);
+}
+
+.AuthorsAsideBox .Category{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--mainBlack);
+    text-decoration: none;
+    transition: .4s;
+}
+.AuthorsAsideBox .Category:hover{
+    color: var(--mainDarkGrey);
+    transition: .4s;
+}
+
+.AuthorsAsideBox svg{
+    color: var(--mainBlue);
+    font-size: 20px;
+}
+
+.SingleAuthorBox{
+    width: 250px;
+    border: 0;
+    cursor: pointer;
+    transition:all .3s ease;
+    border-radius: 15px;
+    margin-bottom: 20px!important;
+}
+
+@media (max-width: 575.98px) { 
+    .SingleAuthorBox{
+        margin: 0 auto;
+    }
+ }
+
+.SingleAuthorBox:hover{
+    opacity: .8;
+    margin-top: -3px;
+    box-shadow: 0 4px 8px 0 var(--mainDarkGrey), 0 6px 20px 0 rgba(212, 212, 212, 0.19);
+    transition:all .3s ease;
+    border-radius: 15px;
+}
+
+.SingleAuthorBox img{
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.SingleAuthorBox .card-body{
+    padding: 0;
+    padding-top: 20px!important;
+}
+
+.SingleAuthorBox .Name{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--mainDarkGrey);
+    cursor: pointer;
+}
+
+
+/* Login */
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+  .Login {
+    background-color: var(--mainLightGrey);
+  }
+  .cardlogin {
+      height: 400px;
+      padding-top: 40px;
+      width: 100px;
+  }
+  .logintitle {
+    text-align: center;
+  }
+  .LoginBtn {
+    margin-top: 20px;
+    background-color: var(--mainBlue);
+    color: var(--mainLightGrey);
+    padding: 10px 15px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .LoginBtn:hover{
+      opacity: .6;
+  }
+  .signup {
+    background-color: var(--mainLightGrey);
+  
+  }
+  @media all and (min-width: 480px) {
+    .signup {
+      padding: 60px 0;
+    }
+  
+    .signup form {
+      position: relative;
+      margin: 0 auto;
+      padding: 20px 20px 20px;
+      width: 310px;
+  
+    }
+  }
+  .cardsignup{
+      height: 500px;
+      padding-top: 10px;
+      width: 100px;
+  }
+  .categ{
+    background-color: var(--mainLightGrey);
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .category{
+    background-color: white;
+    position: relative;
+      margin: 0 auto;
+      padding: 20px 20px 20px;
+      width: 1000px;
+      height: 500px;
+      border-radius: 20px;
+  }
+  .the-box{
+    padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #dadde1;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  
+  }
+  .search{
+    width: 900px;
+    margin-left: 20px;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+.search:focus{
+    outline: none;
+}
+  .bookCat{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--mainPink);
+  }
+  .tableCat{
+    width: 900px;
+    margin-left: 20px;
+  }
+  .tableCat th{
+    color: var(--mainBlue);
+  }
+  .tableCat .links{
+    text-decoration: none;
+    color: black;
+  }
+  .links:hover{
+    /* color: var(--mainPink); */
+    background-color: var(--mainLightGrey);
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+  .Fav{
+      text-align: center;
+      padding: 50px;
+  }
+  .removeBtn{
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      background-color: var(--mainPink);
+  }
+  .removeBtn:hover{
+      opacity: .6;
+  }
+
+  .titleFav{
+      margin-bottom: 50px;
+  }
+  .SignupLink{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--mainBlue);
+    text-decoration: none;
+    transition: .4s;
+  }
+  .SignupLink:hover{
+    color: var(--mainDarkGrey);
+    transition: .4s;
+  }
+
+/* About Us Page */
+
+#navlink4 {
+    background-color: #38B5FF;
+    height: 40px;
+    
+}
+
+#navlink4 a {
+    text-decoration: none;
+    color: white;
+}
+
+#navlink4 p {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+
+#titlewrapper {
+    display: inline-block;
+    margin: auto;
+}
+
+#logowrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logopng {
+    width: 200px;
+    height: 80px;
+}
+
+
+#centerwrapper {
+    text-align: center;
+}
+
+.imgs {
+    width: 50px;
+    height: 50px ;
+    border-radius: 50px;
+}
+
+/* ContactUs page */
+
+#navlink3 {
+    background-color: #38B5FF;
+    height: 40px
+    
+}
+
+#navlink3 a {
+    text-decoration: none;
+    color: white;
+}
+
+#navlink3 p {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#form3 {
+    margin-left: 10%;
+}
+
+
+#cupsbmt {
+    width: 80px;
+    background-color: #38B5FF;
+    color: white;
+    border: 0;
+}
+
+#cupsbmt, #cupfu {
+    border-radius: 0px !important;
+}
+
+/* Personal Info Page */
+#navlink2 {
+    background-color: #38B5FF;
+    height: 40px;
+    
+}
+
+#navlink2 a {
+    text-decoration: none;
+    color: white;
+}
+
+#navlink2 p {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.PersonalInput, textarea{
+    width: 40%;
+    padding: 5px 15px;  
+    border-radius: 5px;
+    border: 1px solid var(--mainLightGrey);
+    background-color: #EAEAEA; 
+    transition: .3s;
+}
+
+.PersonalInput:focus{
+    outline: none;
+    border: 1px solid var(--mainBlue);
+    transition: .3s;
+}
+
+.PersonalCheckbox{
+	border-radius: 50%;
+	height: 20px;
+  	width: 20px;
+	appearance: none;
+	outline: 0;
+	cursor: pointer;
+	border: 1px solid var(--mainDarkGrey);
+	float: left;
+}
+
+.PersonalCheckbox:checked{
+	background-color: var(--mainBlue);
+	border: 4px double var(--mainLightGrey);
+}
+
+.PersonalCheckboxLabel{
+    margin-left: 10px;
+	font-size: 14px;
+	float: left;
+    height: 20px;
+}
+
+#savebtn {
+    background-color: #38B5FF !important;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 28px;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100px;
+    border: 0;
+    float: right;
+    margin-right: 30px;
+}
+
+#savebtn:hover{
+    opacity: .6;
+}
+
+.rghtmrgn {
+    margin-right: 50px;
+}
+
+#emllbl {
+    margin-right: 90px;
+}
+
+#passlbl {
+    margin-right: 58px;
+}
+
+#newpasslbl {
+    margin-right: 18px;
+}
+
+#datelbl {
+    margin-right: 100px;
+}
+
+/* UploadBook Page */
+#navlink {
+    background-color: #38B5FF;
+    height: 40px   
+}
+
+#navlink a {
+    text-decoration: none;
+    color: white;
+}
+
+#navlink p {
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+
+#uploadbtnlabel, #submitbtn {
+    background-color: #38B5FF !important;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0px !important;
+    cursor: pointer;
+    border: 0;
+    
+} 
+
+#submitbtn {
+    margin-left: 15%;
+    width: 80px !important;
+}
+
+#namelbl {
+    margin-right: 50px;
+}
+
+#authourlbl {
+    margin-right: 45px;
+}
+
+#ctglbl {
+    margin-right: 28px;
+}
+
+#dsclbl {
+    margin-right: 8px;
+}
+
+
+/* Book Details */
+
+.TopBox{
+    background-color: var(--mainLightGrey);
+    line-height: 60px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.TopBox .Path li{
+    display: inline;
+}
+
+.TopBox .Path a{
+    font-size: 15px;
+    color: var(--mainBlack);
+    text-decoration: none;
+    transition: .4s;
+}
+
+.TopBox .Path a:hover{
+    color: var(--mainDarkGrey);
+    transition: .4s;
+}
+
+.TopBox .Path .Name{
+    color: var(--mainBlue);
+    font-size: 15px;
+}
+
+.BookDetails .Name{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.BookDetails tbody, td, tfoot, th, thead, tr{
+   padding-bottom: 20px;
+}
+
+.BookDetails .Details tr span{
+    float: right;
+    margin-right: 5px;
+}
+
+.BookDetails .Details tr th{
+    width: 200px;
+}
+
+.BookDetails .Details tr td{
+    color: var(--mainBlue);
+}
+
+.BookDetails .Options{
+    border: 0;
+    background-color: var(--mainBlue);
+    color: var(--mainLightGrey);
+    border-radius: 28px;
+    padding: 7px 15px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    transition: .4s;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.BookDetails .Options:hover{
+    opacity: .6;
+    transition: .4s;
+}
+
+.BookDet .SingleTab .Stars li{
+    display: inline;
+    color: yellow;
+    font-size: 25px;
+}
+.SingleTab .Stars .Number{
+    color: var(--mainBlack);
+    font-size: 15px;
+}
+
+/* Author Details */
+
+.AuthorDetails .Profile img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 575.98px) { 
+    .AuthorDetails .Profile{
+       text-align: center;
+       margin-bottom: 10px;
+    }
+    .AuthorDetails .Info{
+        text-align: center;
+    }
+ }
+
+.AuthorDetails .Info{
+    margin: auto 0;
+}
+
+.AuthorDetails .Info .Name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.AuthorDetails .Info .Book{
+    font-size: 14px;
+}
+
+.AuthorDetails .Info span{
+    color: var(--mainBlue);
+}
